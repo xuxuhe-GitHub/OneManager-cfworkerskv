@@ -1,5 +1,5 @@
 
-var THEME = 'https://github.com/qkqpttgf/OneManager-php/raw/e8f1fd71757edbc895b6d599278c9294a5c51b54/theme/classic.html';
+var THEME = 'https://github.com/xuxuhe-GitHub/OneManager-php/raw/e8f1fd71757edbc895b6d599278c9294a5c51b54/theme/classic.html';
 var OMKV;
 var disk = new Object();
 var GET;
@@ -838,7 +838,7 @@ async function setup() {
   }
   html += '\n\
 <a href="' + preurl + '">返回</a><br>\n\
-<a href="https://github.com/qkqpttgf/OneManager-php">Github</a><br>';
+<a href="https://github.com/xuxuhe-GitHub/OneManager-php">Github</a><br>';
 
   html += '\n\
 <table border=1 width=100%>\n\
@@ -1028,7 +1028,7 @@ class MS365 {
   constructor(tag) {
       this.baseclassname = 'MS365';
 this.disktag = tag;
-this.redirect_uri = 'https://scfonedrive.github.io';
+this.redirect_uri = 'https://xuxuhe-GitHub.github.io';
 return this;
     return (async () => {
       
@@ -1439,7 +1439,7 @@ return this;
                 <label><input type="checkbox" name="NT_Drive_custom" onclick="document.getElementById(\'NT_secret\').style.display=(this.checked?\'\':\'none\');">用自己的ID SECRET</label><br>\n\
                 <div id="NT_secret" style="display:none;margin:10px 35px">\n\
                     <a href="https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps" target="_blank">点击跳转，自行创建</a><br>\n\
-                    return_uri(Reply URL):<br>https://scfonedrive.github.io/<br>\n\
+                    return_uri(Reply URL):<br>https://xuxuhe-GitHub.github.io/<br>\n\
                     client_id:<input type="text" name="NT_client_id" style="width:100%" placeholder="a1b2c345-90ab-cdef-ghij-klmnopqrstuv"><br>\n\
                     client_secret:<input type="text" name="NT_client_secret" style="width:100%"><br>\n\
                 </div>\n\
@@ -1449,7 +1449,7 @@ return this;
                 <label><input type="checkbox" name="CN_Drive_custom" onclick="document.getElementById(\'CN_secret\').style.display=(this.checked?\'\':\'none\');">用自己的ID SECRET</label><br>\n\
                 <div id="CN_secret" style="display:none;margin:10px 35px">\n\
                     <a href="https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps" target="_blank">点击跳转，自行创建</a><br>\n\
-                    return_uri(Reply URL):<br>https://scfonedrive.github.io/<br>\n\
+                    return_uri(Reply URL):<br>https://xuxuhe-GitHub.github.io/<br>\n\
                     client_id:<input type="text" name="CN_client_id" style="width:100%" placeholder="a1b2c345-90ab-cdef-ghij-klmnopqrstuv"><br>\n\
                     client_secret:<input type="text" name="CN_client_secret" style="width:100%"><br>\n\
                 </div>\n\
@@ -1461,7 +1461,7 @@ return this;
             </div>\n\
         </div>\n\
         <br>';
-        html += '你要明白 scfonedrive.github.io 是github上的静态网站，<br>除非github真的挂掉了，<br>不然，稍后你如果连不上，请检查你的运营商或其它“你懂的”问题！<br>';
+        html += '你要明白 xuxuhe-GitHub.github.io 是github上的静态网站，<br>除非github真的挂掉了，<br>不然，稍后你如果连不上，请检查你的运营商或其它“你懂的”问题！<br>';
         let envs = JSON.stringify(Object.keys(ConfigEnvs));
         html +='\n\
         <input type="submit" value="提交">\n\
@@ -1587,7 +1587,7 @@ class Onedrive extends MS365 {
         //this.baseclassname = 'MS365';
       this.classname = 'Onedrive';
       //this.disktag = tag;
-      //this.redirect_uri = 'https://scfonedrive.github.io';
+      //this.redirect_uri = 'https://xuxuhe-GitHub.github.io';
       let client_id = await getConfig('client_id', tag);
       let client_secret = await getConfig('client_secret', tag);
       if (client_id!='' && client_secret!='') {
@@ -1618,7 +1618,7 @@ class OnedriveCN extends MS365 {
       //this.baseclassname = 'MS365';
       this.classname = 'OnedriveCN';
       //this.disktag = tag;
-      //this.redirect_uri = 'https://scfonedrive.github.io';
+      //this.redirect_uri = 'https://xuxuhe-GitHub.github.io';
       let client_id = await getConfig('client_id', tag);
       let client_secret = await getConfig('client_secret', tag);
       if (client_id!='' && client_secret!='') {
@@ -1650,7 +1650,7 @@ class Sharepoint extends MS365 {
       //this.baseclassname = 'MS365';
       this.classname = 'Sharepoint';
       //this.disktag = tag;
-      //this.redirect_uri = 'https://scfonedrive.github.io';
+      //this.redirect_uri = 'https://xuxuhe-GitHub.github.io';
       let client_id = await getConfig('client_id', tag);
       let client_secret = await getConfig('client_secret', tag);
       if (client_id!='' && client_secret!='') {
@@ -1682,7 +1682,7 @@ class SharepointCN extends MS365 {
       //this.baseclassname = 'MS365';
       this.classname = 'SharepointCN';
       //this.disktag = tag;
-      //this.redirect_uri = 'https://scfonedrive.github.io';
+      //this.redirect_uri = 'https://xuxuhe-GitHub.github.io';
       let client_id = await getConfig('client_id', tag);
       let client_secret = await getConfig('client_secret', tag);
       if (client_id!='' && client_secret!='') {
@@ -1714,7 +1714,7 @@ class Sharelink extends MS365 {
       //this.baseclassname = 'MS365';
       this.classname = 'SharepointCN';
       //this.disktag = tag;
-        //this.redirect_uri = 'https://scfonedrive.github.io';
+        //this.redirect_uri = 'https://xuxuhe-GitHub.github.io';
         this.api_url = await getConfig('shareapiurl', tag);
         this.ext_api_url = '';
         this.DownurlStrName = '@content.downloadUrl';
@@ -1820,7 +1820,7 @@ async function render(path, files) {
   let authinfo =`
 <!--
     OneManager: An index & manager of Onedrive auth by ysun.
-    Github: https://github.com/qkqpttgf/OneManager-php
+    Github: https://github.com/xuxuhe-GitHub/OneManager-php
 -->`;
 
   let theme1 = await fetch(THEME);
